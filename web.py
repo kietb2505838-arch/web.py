@@ -150,7 +150,8 @@ def translate(sentence, lang):
     return " ".join(words)
 
 
-if st.button("Chuyển đổi sang Emoji"):
+if st.button("Hiện kết quả của bạn:"):
     output = translate(sentence, lang)
     st.markdown(f"### ✅ Kết quả:")
+
     st.markdown(f"#### {output}")
